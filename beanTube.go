@@ -20,7 +20,7 @@ func (bt *beanTube)reserveTubeJobs(fn JobHandler) {
 	defer bt.wg.Wait()
 
 	for {
-		id, body, err := bt.tubeSet.Reserve(0 * time.Second)
+		id, body, err := bt.tubeSet.Reserve(60 * time.Second)
 
 		if err != nil {
 			if &bt.conn == nil{
