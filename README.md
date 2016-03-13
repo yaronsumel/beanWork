@@ -17,12 +17,7 @@ Worker client for [beanstalkd](http://kr.github.com/beanstalkd/). Written in Go 
     )
 
 
-    bw := &beanWork.BeanWorker{
-            Server:beanWork.BeanServer{
-                Net:"tcp4",
-                Address:"127.0.0.1:11300",
-            },
-        }
+	bw := &beanWork.BeanWorker{"tcp4","127.0.0.1:11300"}
 
     amountOfWorkers := 5
 

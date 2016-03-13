@@ -11,14 +11,10 @@ type(
 
 	//
 	BeanWorker struct {
-		Server BeanServer
-	}
-
-	// holds beanstalk connection info
-	BeanServer struct {
 		Net     string
 		Address string
 	}
+
 )
 
 
@@ -32,7 +28,7 @@ func (bw *BeanWorker)Worker(tube string, numberOfWorkers int, fn JobHandler) {
 // create new beanstalk connection and return it
 // panic if got an connection error
 func (bw *BeanWorker)getNewConnection() *beanstalk.Conn {
-	c, err := beanstalk.Dial(bw.Server.Net, bw.Server.Address)
+	c, err := beanstalk.Dial(bw.Net, bw.Address)
 	if err != nil {
 		panic(err)
 	}
