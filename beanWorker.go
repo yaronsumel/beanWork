@@ -43,6 +43,7 @@ func (bw *BeanWorker)work(tube string, fn JobHandler) {
 		conn:bw.getNewConnection(),
 		wg:sync.WaitGroup{},
 	}
+	defer beanTube.conn.Close()
 	beanTube.tubeSet = beanTube.getTubeSet()
 	beanTube.reserveTubeJobs(fn)
 }
