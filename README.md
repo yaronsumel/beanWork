@@ -12,14 +12,10 @@ Worker client for [beanstalkd](http://kr.github.com/beanstalkd/). Written in Go 
 ```go
     package main
 
-    import (
-        "github.com/yaronsumel/beanWork"
-    )
-
+    import "github.com/yaronsumel/beanWork"
 
 	bw := &beanWork.BeanWorker{"tcp4","127.0.0.1:11300"}
-
-    amountOfWorkers := 5
+	amountOfWorkers := 5
 
 	bw.Worker("mytube",amountOfWorkers,func(job *beanWork.BeanJob) {
 	//do some work here
