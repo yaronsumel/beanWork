@@ -18,7 +18,7 @@ PR are welcome!
 
 	amountOfWorkers := 5
 	bw.Worker("mytube",amountOfWorkers,func(job *beanWork.BeanJob) {
-	//do some work here
+		//do some work here
 		job.Delete()
 	})
 	
