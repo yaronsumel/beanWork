@@ -2,6 +2,7 @@
 
 Worker client for [beanstalkd](http://kr.github.com/beanstalkd/). Written in Go by [Yaron Sumel](http://sumel.me).
 
+PR are welcome!
 
 ## Install
 
