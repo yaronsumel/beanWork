@@ -26,7 +26,7 @@ Worker client for [beanstalkd](http://kr.github.com/beanstalkd/). Written in Go 
 
     amountOfWorkers := 5
 
-	bw.Worker("mytube",amountOfWorkers,func(job *beanWorker.BeanJob) {
+	bw.Worker("mytube",amountOfWorkers,func(job *beanWork.BeanJob) {
 	//do some work here
 		job.Delete()
 	})
