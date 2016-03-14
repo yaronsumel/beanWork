@@ -34,7 +34,7 @@ func (j *BeanJob) Bury(pri uint32) error {
 // Touch resets the reservation timer for the given job.
 // It is an error if the job isn't currently reserved by c.
 // See the documentation of Reserve for more details.
-func (j *BeanJob) Touch(id uint64) error {
+func (j *BeanJob) Touch() error {
 	return j.conn.Touch(j.Id)
 }
 
