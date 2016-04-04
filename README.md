@@ -1,4 +1,4 @@
-# beanWork [![Build Status](https://travis-ci.org/yaronsumel/beanWork.svg?branch=master)](https://travis-ci.org/yaronsumel/beanWork)
+# beanWork [![Build Status](https://travis-ci.org/yaronsumel/beanWork.svg?branch=master)](https://travis-ci.org/yaronsumel/beanWork) [![GoDoc](https://godoc.org/github.com/yaronsumel/beanWork?status.svg)](https://godoc.org/github.com/yaronsumel/beanWork)
 
 Worker client for [beanstalkd](http://kr.github.com/beanstalkd/). Written in Go by [Yaron Sumel](http://sumel.me).
 
