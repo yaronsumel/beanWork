@@ -28,4 +28,4 @@ PR are welcome!
 
 ## TBD
 
-    * Unit-Testing
+    * Recover from lost connections
